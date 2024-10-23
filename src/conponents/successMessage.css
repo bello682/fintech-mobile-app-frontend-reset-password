@@ -1,0 +1,50 @@
+/* successMessage.css */
+.success-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 70vh;
+	background-color: #f0f4f8;
+	padding: 0 1rem; /* Add padding for smaller screens */
+}
+
+.success-card {
+	background: #ffffff;
+	border-radius: 8px;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+	padding: 2rem;
+	text-align: center;
+	width: 100%;
+	max-width: 400px; /* Max width for larger screens */
+}
+
+.animation {
+	font-size: 50px; /* Adjust size of checkmark */
+	margin-bottom: 1rem;
+}
+
+h2 {
+	color: purple; /* Green color for success */
+	margin-bottom: 0.5rem;
+}
+
+p {
+	color: #555;
+	margin-bottom: 1.5rem;
+}
+
+.wrap_icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 80px; /* Adjusted for smaller icon */
+	height: 80px; /* Adjusted for smaller icon */
+	border: 4px solid white; /* Thinner border */
+	border-radius: 50%;
+	margin: 0 auto; /* Center the icon */
+	background: purple;
+}
+
+.checkmark {
+	font-size: 48px; /* Font size for checkmark */
+}

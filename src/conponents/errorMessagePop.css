@@ -1,0 +1,73 @@
+/* ErrorMessage.css */
+.error-message-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #f8d7da;
+	color: #721c24;
+	padding: 15px;
+	border: 1px solid #f5c6cb;
+	border-radius: 5px;
+	margin: auto;
+	position: relative;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	max-width: 500px;
+	width: 100%;
+	z-index: 1000; /* Higher z-index to ensure it stays on top */
+}
+
+/* Overlay to dim the background */
+.error-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 999; /* Lower than the error message container */
+}
+
+.error-icon-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin: 0 auto; /* Center the icon */
+	background: transparent;
+}
+
+.error-icon {
+	font-size: 100px;
+	margin-right: 10px;
+	display: flex;
+	margin: auto;
+	color: red;
+	justify-content: center;
+	align-items: center;
+}
+
+.error-text {
+	flex-grow: 1;
+	color: black;
+}
+
+.btnWrap {
+	border-radius: 5px;
+	padding: 10px 20px;
+	color: white;
+	text-decoration: none;
+	transition: background-color 0.3s ease-in-out;
+	margin-top: 1rem;
+}
+
+.close-button {
+	background: none;
+	border: none;
+	color: #721c24;
+	cursor: pointer;
+	font-size: 18px;
+}
