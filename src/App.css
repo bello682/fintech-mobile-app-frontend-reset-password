@@ -160,3 +160,19 @@ button:active:not(:disabled) {
 	/* padding: 0 10px; */
 	width: 100%;
 }
+
+.error_message {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+}
+
+.error_message p {
+	margin: 0px 0px 20px 0px;
+}
+
+.error_message button {
+	margin-bottom: 20px;
+}
