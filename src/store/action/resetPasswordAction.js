@@ -2,6 +2,9 @@ import axios from "axios";
 import * as actionTypes from "../actionTypes/resertPasswordActionType";
 
 export const resetPassword = (token, newPassword) => async (dispatch) => {
+	const BASE_URL =
+		process.env.REACT_APP_BASE_URL || "http://localhost:8001/Api_Url";
+
 	try {
 		dispatch({ type: actionTypes.RESET_PASSWORD_REQUEST });
 
@@ -12,7 +15,7 @@ export const resetPassword = (token, newPassword) => async (dispatch) => {
 		};
 
 		const { data } = await axios.post(
-			`${process.env.REACT_APP_BASE_URL}/FintechUsers/reset-password/${token}`,
+			`${BASE_URL}/FintechUsers/reset-password/${token}`,
 			{ newPassword },
 			config
 		);
